@@ -18,7 +18,7 @@
 	},
 	"AutoloadClasses": {
 		"RegularTooltipsHooks": "RegularTooltipsHooks.php",
-		"RegularTooltipsParser": "modules/RegularTooltipsParser.php"
+		"RegularTooltipsParser": "src/RegularTooltipsParser.php"
 	},
 	"ResourceModules": {
 		"ext.RegularTooltips": {
