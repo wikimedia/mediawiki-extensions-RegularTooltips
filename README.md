@@ -21,5 +21,3 @@ git clone https://github.com/sanjay-thiyagarajan/RegularTooltips.git
 ```
 {{#info-tooltip: tooltip-text}}
 ```  
-### Dependencies  
-Please ensure that **ParserFunctions** extension is installed
