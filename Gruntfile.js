@@ -20,7 +20,7 @@ module.exports = function ( grunt ) {
 			},
 			all: [
 				'**/*.js{,on}',
-				'!libs/**',
+				'!lib/**',
 				'!node_modules/**',
 				'!vendor/**'
 			]
@@ -28,7 +28,7 @@ module.exports = function ( grunt ) {
 		stylelint: {
 			all: [
 				'**/*.css',
-				'!libs/**',
+				'!lib/**',
 				'!node_modules/**',
 				'!vendor/**'
 			]
