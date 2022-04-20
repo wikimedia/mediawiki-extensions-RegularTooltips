@@ -9,22 +9,19 @@
  *
  */
 
- class RegularTooltipsHooks {
+class RegularTooltipsHooks {
+	/**
+	 * Register parser hooks
+	 * @see https://www.mediawiki.org/wiki/Manual:Parser_functions
+	 * @param Parser $parser
+	 */
+	public static function registerParserFunctions( $parser ) {
+		$output = RequestContext::getMain()->getOutput();
+		$output->addModules( 'ext.RegularTooltips' );
 
-  /**
-  * Register parser hooks
-  * See also http://www.mediawiki.org/wiki/Manual:Parser_functions
-  */
-  public static function registerParserFunctions( &$parser ) {
+		// Register parser functions
+		$parser->setFunctionHook( 'inline-tooltip', [ 'RegularTooltipsParser', 'inlineTooltip' ] );
+		$parser->setFunctionHook( 'info-tooltip', [ 'RegularTooltipsParser', 'infoTooltip' ] );
+	}
 
-    global $wgOut;
-		$wgOut->addModules( 'ext.RegularTooltips' );
-
-    // Register parser functions
-    $parser->setFunctionHook( 'inline-tooltip', [ 'RegularTooltipsParser', 'inlineTooltip' ] );
-    $parser->setFunctionHook( 'info-tooltip', [ 'RegularTooltipsParser', 'infoTooltip' ] );
-
-    return true;
-  }
-
- }
+}
