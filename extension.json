@@ -17,7 +17,7 @@
 		"RegularTooltipsMagic": "RegularTooltips.i18n.magic.php"
 	},
 	"AutoloadClasses": {
-		"RegularTooltipsHooks": "RegularTooltipsHooks.php",
+		"RegularTooltipsHooks": "src/RegularTooltipsHooks.php",
 		"RegularTooltipsParser": "src/RegularTooltipsParser.php"
 	},
 	"ResourceModules": {
