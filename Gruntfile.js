@@ -6,6 +6,7 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-stylelint' );
 
 	grunt.initConfig( {
+		// eslint-disable-next-line es/no-object-assign, compat/compat
 		banana: Object.assign(
 			conf.MessagesDirs,
 			{
