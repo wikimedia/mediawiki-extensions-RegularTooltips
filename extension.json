@@ -4,7 +4,7 @@
 	"author": [
 		"Sanjay Thiyagarajan"
 	],
-	"url": "",
+	"url": "https://www.mediawiki.org/wiki/Extension:RegularTooltips",
 	"descriptionmsg": "regulartooltips-desc",
 	"type": "parserhook",
 	"load_composer_autoloader": true,
