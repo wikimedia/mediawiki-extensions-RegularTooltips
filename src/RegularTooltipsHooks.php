@@ -6,7 +6,6 @@
  * @file
  * @ingroup Extensions
  * @author Sanjay Thiyagarajan
- *
  */
 
 class RegularTooltipsHooks {
