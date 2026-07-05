@@ -22,9 +22,28 @@
 	},
 	"ResourceModules": {
 		"ext.RegularTooltips": {
-			"scripts": "lib/RegularTooltips.js",
+			"class": "MediaWiki\\ResourceLoader\\CodexModule",
+			"packageFiles": [
+				"lib/RegularTooltips.js",
+				"lib/InfoTooltip.vue",
+				{
+					"name": "lib/icons.json",
+					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
+					"callbackParam": [
+						"cdxIconInfo"
+					]
+				}
+			],
+			"codexComponents": [
+				"CdxToggleButton",
+				"CdxPopover",
+				"CdxIcon"
+			],
+			"messages": [
+				"regulartooltips-info-label"
+			],
 			"dependencies": [
-				"oojs-ui-widgets"
+				"vue"
 			]
 		}
 	},
@@ -36,7 +55,7 @@
 		"ParserFirstCallInit": "RegularTooltipsHooks::registerParserFunctions"
 	},
 	"requires": {
-		"MediaWiki": ">= 1.40.0"
+		"MediaWiki": ">= 1.44.0"
 	},
 	"manifest_version": 1
 }

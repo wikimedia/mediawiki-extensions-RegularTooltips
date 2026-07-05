@@ -4,5 +4,6 @@
 			"Sanjay Thiyagarajan"
 		]
 	},
-	"regulartooltips-desc": "{{desc|name=RegularTooltips}}"
+	"regulartooltips-desc": "{{desc|name=RegularTooltips}}",
+	"regulartooltips-info-label": "Accessible label for the icon-only button that opens an info tooltip popover. Used as the button's aria-label."
 }
